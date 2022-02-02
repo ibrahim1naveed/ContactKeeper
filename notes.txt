@@ -5,3 +5,15 @@ You use config/default.json to store and us global variables.
 Use hashing for special characters in your password - URI
 
 Refactor to async - await for promises instead of .then .catch!!
+
+
+Creating user functionality and establishing routes
+
+
+Mongoose Models : You need to have a model for each resource in the database (mongoose). Inside a model theres
+a schema for that specific resource.
+
+In order to send a request body we need to use a bit of middleware. (included with express)
+
+I want to limit the scope of what can be sent in the request body and also make sure that smth is sent.
+We do this by using the express validator.
