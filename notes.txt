@@ -1,0 +1,7 @@
+You connect to the DB using mongoose which returns promises. When you have a promise you use `.then()`
+
+You use config/default.json to store and us global variables.
+
+Use hashing for special characters in your password - URI
+
+Refactor to async - await for promises instead of .then .catch!!
