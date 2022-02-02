@@ -17,3 +17,5 @@ In order to send a request body we need to use a bit of middleware. (included wi
 
 I want to limit the scope of what can be sent in the request body and also make sure that smth is sent.
 We do this by using the express validator.
+
+We use bcrypt to encrypt the password before storing it to the database.
