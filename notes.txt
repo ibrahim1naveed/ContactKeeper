@@ -24,3 +24,5 @@ JS Web Token: Now that we have a way to register a user and add it to the databa
 which is done by JSON Web Token (A special token that has a special payload in it)
 
 Create and respond with an encoded Json Web Token!
+
+Now we are going to create 'login' user!
