@@ -19,3 +19,8 @@ I want to limit the scope of what can be sent in the request body and also make 
 We do this by using the express validator.
 
 We use bcrypt to encrypt the password before storing it to the database.
+
+JS Web Token: Now that we have a way to register a user and add it to the database, we need a way to respond,
+which is done by JSON Web Token (A special token that has a special payload in it)
+
+Create and respond with an encoded Json Web Token!
