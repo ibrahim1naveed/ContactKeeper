@@ -32,3 +32,5 @@ we can fire in this middleware function. Whenever you have a middleware fucntion
 function which says to move on to the next middleware.
 
 Added 'auth' middleware to the getting logged in user route. Authentication part is done!
+
+Creating contact model schema and then adding the route - get all contacts for that user!
