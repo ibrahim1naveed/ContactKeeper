@@ -25,4 +25,10 @@ which is done by JSON Web Token (A special token that has a special payload in i
 
 Create and respond with an encoded Json Web Token!
 
-Now we are going to create 'login' user!
+Now we are going to create 'login' user! Similar to registering a user!
+
+Middleware is just a function that has access to the req,res cycle and object. Every time we hit the endpoint
+we can fire in this middleware function. Whenever you have a middleware fucntion you need to have a 'next' 
+function which says to move on to the next middleware.
+
+Added 'auth' middleware to the getting logged in user route. Authentication part is done!
