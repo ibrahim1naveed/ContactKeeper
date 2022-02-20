@@ -34,3 +34,19 @@ function which says to move on to the next middleware.
 Added 'auth' middleware to the getting logged in user route. Authentication part is done!
 
 Creating contact model schema and then adding the route - get all contacts for that user!
+
+
+
+FRONTEND START
+
+use concurrently to run both backend and frontend server together
+
+axios - http react client
+
+added font awesome code in index.html
+
+We created the client side folder and included a component 'navbar' using proptypes to ensure that the 
+navbar has the attributes 'title' and a 'icon'.
+
+
+
