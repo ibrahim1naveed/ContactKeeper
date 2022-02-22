@@ -48,5 +48,13 @@ added font awesome code in index.html
 We created the client side folder and included a component 'navbar' using proptypes to ensure that the 
 navbar has the attributes 'title' and a 'icon'.
 
+We will be using react router for the front end. 
+
+Fragments let you group a list of children nodes without a parent node.
+
+Adding routes:
+
+Link is to direct the page to another sub page
+
 
 
