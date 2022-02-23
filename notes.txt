@@ -56,5 +56,41 @@ Adding routes:
 
 Link is to direct the page to another sub page
 
+'uuid' to generate a random user id.
+
+CONTEXT react
+
+Steps:
+
+1. Create Context folder
+2. Create context/types.js - variables that we are going to use to decide what we are going to do in our reducer.
+3. Create contact/ context, state, reducer files (Structure from template)
+
+    Context : Just to initiliaze the context object.
+    State : `useReducer` hook to have access to the state and also to use dispatch (to our reducer). Import
+    the now intialized contact context & the contact reducer.
+    Reducer : 
+
+In the state file, the next step after defining the initial state is to pull out the state and dispatch from
+our reducer from our 'useReducer' hook.
+
+Wrap entire app.js code with the ContactState so that we can use it. Now we have access to our STATE. 
+
+Start creating components.
+
+Contacts : Pull in the contacts from the state into the contacts component and then loop through them and 
+output a contact item for each of them.
+
+useContext hook!!
+
+Use the data about contacts and embed it on the home page!
+
+
+//If theres an email then output an li
+            {email && (<li>
+                <i className='fas fa-envelope-open'></i> {email}
+                </li>)}
+
+
 
 
