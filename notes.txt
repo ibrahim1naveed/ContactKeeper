@@ -96,3 +96,10 @@ Contact Form components
 
 Bring in useState because since this is a form we do need a component level state. 
 
+Set and Clear Current Contact:
+
+Added a new state called current to highlight which contact we are on and perform tasks on it. This is done
+by using the State - Context - Reducer technique. Now that we have a component selected we need to write
+the code for the 'Action' that needs to be implemented. Thats what we are going to do right now.
+
+useEffect is a hook that im going to use that basically mimics the lifecycle method componentDidMount!
