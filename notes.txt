@@ -103,3 +103,14 @@ by using the State - Context - Reducer technique. Now that we have a component s
 the code for the 'Action' that needs to be implemented. Thats what we are going to do right now.
 
 useEffect is a hook that im going to use that basically mimics the lifecycle method componentDidMount!
+
+Filtering:
+
+Type in something and filter on different features. We are going to want to have a piece of state dedicated
+to filtered contacts.
+
+Going to use 'useRef' to reference a DOM object.
+
+Use Effect : If the filter contact is empty i want the values to be empty
+
+ContactState has all the actions to be used!

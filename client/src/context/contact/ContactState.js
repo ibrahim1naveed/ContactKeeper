@@ -28,20 +28,21 @@ const ContactState = props => {
             },
             {
                 id: 2,
-                name: 'Jill Johnson',
-                email: 'jill@gmail.com',
-                phone: '111-111-111',
+                name: 'Sam Smith',
+                email: 'sam@gmail.com',
+                phone: '222-222-222',
                 type: 'professional'
             },
             {
                 id: 3,
-                name: 'Jill Johnson',
-                email: 'jill@gmail.com',
-                phone: '111-111-111',
+                name: 'Sara Johnson',
+                email: 'sara@gmail.com',
+                phone: '333-333-333',
                 type: 'personal'
             }
         ],
-        current: null
+        current: null,
+        filtered: null
     };
     // state allows us to access anything in our state.
     // dispatch allows us to dispatch objects to the 'Reducer'.
@@ -81,8 +82,16 @@ const ContactState = props => {
     }   
 
     // Filter contacts
+    const filterContacts = text => {
+        // dispatch to our reducer
+        dispatch({ type: FILTER_CONTACTS, payload: text });
+    }
 
     // Clear filter
+    const clearFilter = () => {
+        // dispatch to our reducer
+        dispatch({ type: CLEAR_FILTER });
+    }
 
     // RETURN OUR PROVIDER. The idea is to wrap our entire application with this context
     return (
@@ -92,11 +101,15 @@ const ContactState = props => {
         value={{
             contacts: state.contacts,
             current: state.current,
+            filtered: state.filtered,
             addContact,//whenever we need to access anything through a component via the context we add it here.
             deleteContact, // very importtant to provide this as we are providing this function to our component.
             setCurrent,
             clearCurrent,
-            updateContact
+            updateContact,
+            filterContacts,
+            clearFilter
+            
            }}>
             { props.children }
         </ContactContext.Provider>
