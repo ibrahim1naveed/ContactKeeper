@@ -114,3 +114,38 @@ Going to use 'useRef' to reference a DOM object.
 Use Effect : If the filter contact is empty i want the values to be empty
 
 ContactState has all the actions to be used!
+
+
+Now we are going to integrate our backend with the project. 
+
+First step is to establish authentication between react and express. 
+We are going to have a whole context for authentication.
+
+Context:
+1) State - Get the types related to the authState. Get the initial state set up. 
+ - Token : This will be stored in local storage of our browser. 
+ - isAuthenticated : Tells us if we are logged in or not
+ - loading : Indicate where we are on the req, res process.
+ - user : Which user is logged in. 
+ - error : Error storage.
+2) Context - get the createContext from React.
+3) Reducer
+
+Add the types related to authentication communication operations. 
+Add the actions related to this context type. 
+
+Actions :
+1) Load user
+2) Register user
+3) Login user
+4) Logout user
+5) Clear errors
+
+- return statement will contain our provider. 
+
+Creating two new components:
+
+1) Login form
+2) Register Form
+
+
